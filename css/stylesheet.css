@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*@media screen and (max-width:600px) */
+
+
+/*----------HEADER BLACK BAR--------*/
+
+#global_navi ul {
+display: block;
+position: fixed;
+width: 100vw;
+height: 41px;
+left: 0px;
+top: 0px;
+margin:0px 0px;
+background: linear-gradient(180deg, #221B1B 0%, rgba(0, 0, 0, 0.62) 96.87%);
+}
+
+/* #global_navi ul nav ul{
+ display: none !important;
+}
+#global_navi ul nav ul li{display: block !important;} */
+
+
+/*----------HEADER BLACK BAR--------*/
+
+/* ---------------------------リンク文字色関連------------------------------ */
+#global_navi li a ,#newbass a{ text-decoration: none;}
+#global_navi li a ,#newbass a:link { color: white; } /*リンクの色*/
+#global_navi li a ,#newbass a:visited { color: white; } /*訪問済みリンクの色*/
+#global_navi li a ,#newbass a:hover{ color: white;
+  text-decoration: none; } /*マウスオン時のリンクの色*/
+#global_navi li a ,#newbass a:active{ color: white; } /*クリックしている時のリンクの色*/
+
+##newbass a{ text-decoration: none;}
+##newbass a:link { color: rgb(0, 0, 0); } /*リンクの色*/
+#newbass a:visited { color: rgb(0, 0, 0); } /*訪問済みリンクの色*/
+#newbass a:hover{ color: rgb(105, 105, 105);
+  text-decoration: none; } /*マウスオン時のリンクの色*/
+#newbass a:active{ color: rgb(105, 105, 105); } /*クリックしている時のリンクの色*/
+  
+  /* ---------------------------リンク文字色関連------------------------------ */
+
+  /* はんばーーーがーーーー */
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+  
+  .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+  }
+  
+  .nav {
+    background-color:rgba(0, 0, 0, 0.719);		/*背景色*/
+    color:#020202;			/*文字色*/
+    position: fixed;
+    width: 129px;
+    top: 41px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+  }
+  
+  
+  .nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* はんばーーーがーーーー */
+  
+  
+
+
+
+#global_navi li {
+  list-style-type:none;
+  display: inline;
+  
+  margin: 0 0;
+}
+
+
+
+.HUNBERGER-MENU-wrap{ 
+  float: left;
+  display:block;		
+  width: 7vw; height:41px;  
+
+  padding:7px 0px 0px 1vw;
+  margin: 0 0;
+}
+
+.home-head-nav-wraper a{ 
+  float: left;
+  display:block;		
+  width:22%; height:41px;  
+  text-align:center;
+  font-size: 21px;
+  padding:5px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+.bass-head-nav-wraper a{
+  float: left;
+  display:block;			/*リンク部分をブロック表示にする*/
+  width:17%; height:41px;	/*幅と高さ*/
+  text-align:center;
+  font-size: 14px;
+  padding:10px 0px 0px 0px;
+  margin: 0 auto;
+}
+.topics-head-nav-wraper a{
+  float: left;
+  display:block;			/*リンク部分をブロック表示にする*/
+  width:17%; height:41px;	/*幅と高さ*/
+  text-align:center;
+  font-size: 14px;
+  padding:10px 0px 0px 0px;
+  margin: 0 auto;
+}
+.bbs-head-nav-wraper a{
+  float: left;
+  display:block;			/*リンク部分をブロック表示にする*/
+  width:17%; height:41px;	/*幅と高さ*/
+  text-align:center;
+  font-size: 14px;
+  padding:10px 0px 0px 0px;
+  margin: 0 auto;
+}
+.notif-head-nav-wraper a{
+  float: left;
+  display:inline-block;			/*リンク部分をブロック表示にする*/
+  width:8%; height:41px;	/*幅と高さ*/
+  padding:0px 0px 0px 0px;
+  text-align:center !important;
+  margin: 0 auto;
+}
+
+.notif-head-nav-wraper a img{
+    width:26.91px; height:29.75px;	/*幅と高さ*/
+  padding:8px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+.accounticon-head-nav-wraper a{
+  float: left;
+  display:inline-block;			/*リンク部分をブロック表示にする*/
+  width:8%; height:41px;	/*幅と高さ*/
+  padding:0px 0px 0px 0px;
+  text-align:center !important;
+  margin: 0 auto;
+}
+
+.accounticon-head-nav-wraper a img{
+    widows: 36px; height:36px;	/*幅と高さ*/
+    padding:4px 0px 0px 0px;
+
+  margin: 0 auto;
+}
+
+
+  #global_navi {
+    display: block;
+    width: 100%;
+    height: 41px;
+  clear: both;
+  position: relative; z-index: 2;
+  }
+
+/*  -------ハンバーガーメニュ用！！！絶対に消すなよ！！死ぬぞ--------- */
+  #global_navi ul li div nav ul{    
+    display: block;
+    color:rgba(184, 184, 184, 0) !important;
+    width: 100%;
+    height: 41px;
+    clear: both;
+    position: relative;
+  }
+  ul #HunMenu{
+    background : none;
+  }
+  /*  -------ハンバーガーメニュ用！！！絶対に消すな--------- */
+
+/* --------------BLANKCPACE----------------------- */
+#BLANKSPACE{
+  display: block;
+  width: 100%;
+  height: 149px;
+  background-color: #E7E7E7;
+  text-align: center;
+}
+
+/* --------------BLANKCPACE----------------------- */
+.blankbar{display: block; height: 41px;}
+
+/* -----------------NEW BASS----------------- */
+
+#newbass {
+  display: block;
+/*   padding:0 4.5% 0 4.5% ;  いったん保留*/
+  top:41px;
+  width: 100%;
+  height: 700px;
+  background-color: #E7E7E7;
+}
+#articleul{
+  width: 100%;
+  height: 618px;
+}
+
+
+#articleul li
+{
+  display: block; 
+  width:44%;
+  height: 300px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.9) 47.71%, rgba(79, 79, 79, 0.9) 100%);
+  float: left;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+} 
+#newbass li .article{ display: block; height: 100%;}
+#newbass h1
+{
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  width: 100vw;
+  height:41px
+}
+#newbass .article-photo a img
+{
+  display: block;
+  width:100%;
+  height: 95px;
+ }
+
+ 
+ #newbass .good-date-wrap p{
+   font-size:9px ;
+   vertical-align: middle;
+   padding:0 0 0px 0 ;
+   
+  }
+  #newbass .good-date-wrap img
+  {
+    width: 10px;
+    height: 9px;
+    padding:0px 0 0 0;
+  }
+  .article-title h2{ font-size:13px; }
+  .article-paragraph p{font-size: 9px ;}
+  .article-viewallbtn p{font-size: 13px; text-align: right;}
+  .article-border hr{ 
+      display: block;
+      border: 0;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(left, transparent, #000 25%, #000 75%, transparent);
+      background-image: linear-gradient(to right, transparent, #000 25%, #000 75%, transparent);
+
+    text-align: center;
+    
+    }
+
+    .author-thum-name-wrap{
+      display: block;
+      width: 100%;
+      height: 23.3%;
+    }
+
+    #author-thum-name-wrapper li{
+      background : none !important;
+      box-shadow: none !important;
+
+    }
+
+    #author-thum-name-wrapper li{
+      display: block;
+      height:70px!important;
+      float: left;
+    }
+    #articleul .articlelist{
+      margin:0% 0% 1% 4%;
+    }  
+    
+    .followbtn-wrap {
+      display: block;
+      width:40%;
+      height:10% ;
+      
+      filter: drop-shadow(0px 10% 7% 0 rgba(0, 0, 0, 0.103));
+      border-radius: 15px;
+    }
+    .followbtn-wrap p{
+      text-align: center;
+      background: linear-gradient(180deg, rgba(212, 211, 211, 0.86) 5.73%, rgba(196, 196, 196, 0) 100%);
+      /* border: 0.5px solid #000000; */
+      box-sizing: border-box;
+      border-radius: 15px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.616));
+      
+    }
+    #articleul{
+      clear: both;
+    }
+    #bass-viewall {
+      text-align: center;
+    }
+    
+    #author-thum-name-wrapper  .author-thum-wrap, #author-thum-name-wrapper img{
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    #author-thum-name-wrapper  .author-thum-wrap{
+      padding: 10px 0 0 10px;
+    }
+    #author-thum-name-wrapper .author-name-wrap{
+      display: block;
+      padding: 10px 0 0 20px ;
+      
+      text-align: left;
+      font-size:21px ;
+      font-weight:bold ;
+      width: 65%;
+      height: 50px;
+    }
+    
